@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { ChatCompletionRequestMessage } from "openai";
-import { Empty } from "@/components/empty";
+import { EmptyMusic } from "@/components/empty-music";
 import { Loader } from "@/components/loader";
 
 import { formSchema } from "./constants";
@@ -100,7 +100,7 @@ const MusicPage = () => {
             </div>
           )}
           {!music && !isLoading && (
-            <Empty label="No music yet prompted..." />
+            <EmptyMusic label="No music yet prompted..." />
           )}
          {music && (
           <audio controls className="w-full mt-8">

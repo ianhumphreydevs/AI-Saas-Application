@@ -5,7 +5,7 @@ interface EmptyProps {
   label: string;
 }
 
-export const EmptyConversation = ({
+export const EmptyMusic = ({
     label
 }: EmptyProps) => {
     return (
@@ -14,7 +14,7 @@ export const EmptyConversation = ({
                 <Image
                 alt="Empty"
                 fill
-                src="/conversation.png"
+                src="/music.png"
                 />
             </div>
             <p className="text-muted-foreground text-sm text-center">

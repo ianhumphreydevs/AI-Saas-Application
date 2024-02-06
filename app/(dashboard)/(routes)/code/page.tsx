@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input";
 import Heading from "@/components/heading";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
-import { Empty } from "@/components/empty";
+import { EmptyCode } from "@/components/empty-code";
 import { Loader } from "@/components/loader";
 import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
@@ -109,7 +109,7 @@ const CodePage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started." />
+            <EmptyCode label="No conversation started." />
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (

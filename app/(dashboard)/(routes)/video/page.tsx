@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { ChatCompletionRequestMessage } from "openai";
-import { Empty } from "@/components/empty";
+import { EmptyVideo } from "@/components/empty-video";
 import { Loader } from "@/components/loader";
 
 import { formSchema } from "./constants";
@@ -98,7 +98,7 @@ const VideoPage = () => {
               <Loader />
             </div>
           )}
-          {!video && !isLoading && <Empty label="No video yet prompted..." />}
+          {!video && !isLoading && <EmptyVideo label="No video yet prompted..." />}
           {video && (
             <video
               className="w-full aspect-video mt-8 rounded-lg border bg-black"
