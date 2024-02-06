@@ -74,7 +74,7 @@ const Sidebar = ({ apiLimitCount = 0, isPro = false, }: SidebarProps) => {
             <Image fill alt="Logo" src="/logo.png" />
           </div>
           <h1 className={cn("text-2xl font-bold", montserrat.className)}>
-            Genius
+            Create
           </h1>
         </Link>
         <div className="space-y-1">
